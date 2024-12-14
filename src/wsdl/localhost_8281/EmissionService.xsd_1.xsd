@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by XML-WS Runtime (https://github.com/eclipse-ee4j/metro-jax-ws). Runtime's version is XML-WS Runtime 4.0.1 git-revision#298606e. --><xs:schema xmlns:tns="http://ws/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws/">
+
+<xs:element name="Emission" type="tns:emission"/>
+
+<xs:element name="getAllEmissions" type="tns:getAllEmissions"/>
+
+<xs:element name="getAllEmissionsResponse" type="tns:getAllEmissionsResponse"/>
+
+<xs:element name="getEmissionsByRegion" type="tns:getEmissionsByRegion"/>
+
+<xs:element name="getEmissionsByRegionResponse" type="tns:getEmissionsByRegionResponse"/>
+
+<xs:element name="getEmissionsBySector" type="tns:getEmissionsBySector"/>
+
+<xs:element name="getEmissionsBySectorResponse" type="tns:getEmissionsBySectorResponse"/>
+
+<xs:complexType name="getAllEmissions">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAllEmissionsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:emission" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="emission">
+<xs:sequence>
+<xs:element name="sector" type="xs:string" minOccurs="0"/>
+<xs:element name="region" type="xs:string" minOccurs="0"/>
+<xs:element name="co2Emissions" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEmissionsByRegion">
+<xs:sequence>
+<xs:element name="region" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEmissionsByRegionResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:emission" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEmissionsBySector">
+<xs:sequence>
+<xs:element name="sector" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEmissionsBySectorResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:emission" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

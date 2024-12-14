@@ -1,0 +1,12 @@
+com\mycompany\emissionserviceclient\GetEmissionsByRegionResponse.class
+com\mycompany\emissionserviceclient\GetEmissionsBySector.class
+com\mycompany\emissionserviceclient\GetAllEmissions.class
+com\mycompany\emissionserviceclient\GetEmissionsByRegion.class
+com\mycompany\emissionserviceclient\EmissionService.class
+com\mycompany\emissionserviceclient\GetAllEmissionsResponse.class
+com\mycompany\emissionserviceclient\ObjectFactory.class
+com\mycompany\emissionserviceclient\GetEmissionsBySectorResponse.class
+com\mycompany\emissionserviceclient\package-info.class
+com\mycompany\emissionserviceclient\Emission.class
+com\mycompany\emissionserviceclient\EmissionServiceClient.class
+com\mycompany\emissionserviceclient\EmissionService_Service.class
